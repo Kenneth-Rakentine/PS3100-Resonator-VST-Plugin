@@ -13,6 +13,14 @@ Tiptop Audio Resonator, and Nonlinear Circuits Resonate.**
 
 <hr>
 
+<br>
+
+[![ENSEMBLE Demo](https://img.youtube.com/vi/6IAOZ5ATTes/maxresdefault.jpg)](https://youtu.be/6IAOZ5ATTes)
+<br>
+↑ Click for Youtube Video Demo ↑
+
+<hr>
+
 ## Circuit Heritage
 
 The Korg PS3100 (1977) featured a resonator section with three parallel
