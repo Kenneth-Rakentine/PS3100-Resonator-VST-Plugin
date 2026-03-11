@@ -1,4 +1,4 @@
-# PS3100 Resonator — VST3 Plugin
+# PS3100 Resonator - VST3 Plugin
 <br>
 <p align="center">
   <img src="logo.png">
