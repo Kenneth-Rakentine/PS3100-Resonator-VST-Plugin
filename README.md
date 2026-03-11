@@ -54,11 +54,11 @@ The Dust Exciter is a unique feature not found on the original PS3100 hardware. 
 
 ### How It Was Discovered
 
-During prototyping, we noticed that rapidly adjusting the input volume knob produced a striking hollow, spectral, physically-modeled resonator sound — completely different from the normal resonator behavior. The effect only occurred *while the knob was being turned*, creating an ethereal ringing at the tuned band frequencies that sounded like striking a resonant metal surface.
+During prototyping, we noticed that rapidly adjusting the input volume knob produced a striking hollow, spectral, physically-modeled resonator sound; completely different from the normal resonator behavior. The effect only occurred *while the knob was being turned*, creating an ethereal ringing at the tuned band frequencies that sounded like striking a resonant metal surface.
 
 ### What's Actually Happening
 
-The artifact occurs because abrupt gain changes create **step discontinuities** in the audio signal. When the volume knob jumps from one value to another, the entire audio signal is instantaneously multiplied by a different number. That sudden step is mathematically equivalent to a **wideband impulse** — it contains energy across the entire frequency spectrum simultaneously. When this impulse hits the three parallel bandpass filters, each filter rings at its tuned resonant frequency, producing the characteristic hollow, pitched decay.
+The artifact occurs because abrupt gain changes create **step discontinuities** in the audio signal. When the volume knob jumps from one value to another, the entire audio signal is instantaneously multiplied by a different number. That sudden step is mathematically equivalent to a **wideband impulse**. It contains energy across the entire frequency spectrum simultaneously. When this impulse hits the three parallel bandpass filters, each filter rings at its tuned resonant frequency, producing the characteristic hollow, pitched decay.
 
 This is the exact same principle behind **physical modeling synthesis**: a resonant body (the bandpass filters) is excited by an impulse (the gain discontinuity). The resonator's emphasis (Q) controls determine how long the ringing sustains, and the frequency knobs determine the pitches. It's acoustically identical to striking a tuning fork, a drum head, or a metallic surface.
 
@@ -68,18 +68,18 @@ The Dust Exciter is a **sample-and-hold gain modulator** that deliberately creat
 
 1. A random gain value is sampled and held constant
 2. The incoming audio is multiplied by this held gain before entering the bandpass filter
-3. At irregular intervals, a new random gain value is sampled — the **transition** between the old and new value is the excitation impulse
+3. At irregular intervals, a new random gain value is sampled; the **transition** between the old and new value is the excitation impulse
 4. The bandpass filter rings at its resonant frequency in response to each impulse
 
 **The DUST knob controls the grain rate:**
 - At **0%**: completely bypassed, no effect
-- At **low values** (~5 Hz): slow, sparse pings — subtle hollow resonance on transients
-- At **medium values** (~100–500 Hz): scattered, dusty texture — like sand on a vibrating plate
-- At **high values** (~2000 Hz): dense granular cloud — the resonator becomes a shimmering, textured instrument
+- At **low values** (~5 Hz): slow, sparse pings; subtle hollow resonance on transients
+- At **medium values** (~100–500 Hz): scattered, dusty texture; like sand on a vibrating plate
+- At **high values** (~2000 Hz): dense granular cloud; the resonator becomes a shimmering, textured instrument
 
 **Velocity sensitivity:** The gain variation depth tracks the input signal's envelope, so louder audio creates bigger gain jumps and stronger excitation. Quiet passages barely excite the resonator. Percussive transients create the strongest ringing. This makes the Dust Exciter inherently musical and dynamic.
 
-**Per-band control:** Each of the three bands has its own independent DUST knob, allowing you to create complex textures — for example, heavy dust excitation in the high frequencies for shimmer while keeping the low band clean for weight.
+**Per-band control:** Each of the three bands has its own independent DUST knob, allowing you to create complex textures; for example, heavy dust excitation in the high frequencies for shimmer while keeping the low band clean for weight.
 
 <hr>
 
