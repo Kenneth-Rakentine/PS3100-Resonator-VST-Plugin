@@ -11,6 +11,7 @@
 resonator circuit, with design influences from the Polymoog resonator,
 Tiptop Audio Resonator, and Nonlinear Circuits Resonate.**
 
+<hr>
 
 ## Circuit Heritage
 
