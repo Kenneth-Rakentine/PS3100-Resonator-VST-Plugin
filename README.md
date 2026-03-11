@@ -4,10 +4,10 @@
   <img src="logo.png">
 </p>
 <br>
-A three-band parallel resonator VST3 plugin modeled after the **Korg PS3100**
+**A three-band parallel resonator VST3 plugin modeled after the Korg PS3100
 resonator circuit, with design influences from the Polymoog resonator,
-Tiptop Audio Resonator, and Nonlinear Circuits Resonate.
-
+Tiptop Audio Resonator, and Nonlinear Circuits Resonate.**
+<hr>
 ## Circuit Heritage
 
 The Korg PS3100 (1977) featured a resonator section with three parallel
