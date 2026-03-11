@@ -20,7 +20,7 @@
 <br>
 <hr>
 
-##Install (Windows VST3)
+**Install (Windows VST3)**
 
 Download the latest release .zip from the Releases page
 Extract the .zip file
@@ -34,7 +34,7 @@ PS3100 Resonator will appear under Depattern in your plugin list
 
 <hr>
 
-##Circuit Heritage
+**Circuit Heritage**
 The Korg PS3100 (1977) featured a resonator section with three parallel bandpass filter stages controlled via vactrols (VTL5C3/2 optocouplers). The OTA-based filter topology, driven by BC550c/BC560c transistor pairs, produced warm, vowel-like formant peaks that gave the PS3100 its distinctive vocal quality.
 This plugin faithfully models that architecture in software:
 
@@ -46,7 +46,7 @@ Per-band Dust Exciter for transient-reactive granular resonance (see below)
 
 <hr>
 
-##Dust Exciter
+**Dust Exciter**
 The Dust Exciter is a unique feature not found on the original PS3100 hardware. It was discovered by accident during development and deliberately engineered into a musical tool.
 How It Was Discovered
 During prototyping, we noticed that rapidly adjusting the input volume knob produced a striking hollow, spectral, physically-modeled resonator sound — completely different from the normal resonator behavior. The effect only occurred while the knob was being turned, creating an ethereal ringing at the tuned band frequencies that sounded like striking a resonant metal surface.
@@ -75,7 +75,7 @@ Parameters
 ParameterRangeDefaultDescriptionVOL IN-24 to +12 dB0 dBInput levelLFO RATE0.01–12 Hz0.3 HzFrequency modulation speed (all bands)LFO DEPTH0–100%0%Frequency modulation amountMIX0–100%70%Wet/dry blendVOL OUT-24 to +12 dB0 dBOutput levelBand I FREQ60–600 Hz180 HzLow band center frequencyBand I EMPH0.5–404.0Low band resonance (Q)Band I GAIN-60 to +12 dB0 dBLow band levelBand I DUST0–100%0%Low band dust exciter amountBand II FREQ200–3000 Hz800 HzMid band center frequencyBand II EMPH0.5–404.0Mid band resonance (Q)Band II GAIN-60 to +12 dB0 dBMid band levelBand II DUST0–100%0%Mid band dust exciter amountBand III FREQ1k–12k Hz4000 HzHigh band center frequencyBand III EMPH0.5–404.0High band resonance (Q)Band III GAIN-60 to +12 dB0 dBHigh band levelBand III DUST0–100%0%High band dust exciter amount
 <hr>
 
-##Signal Flow
+**Signal Flow**
                             ┌─────────────────────────────────────────┐
                             │          PER BAND (×3 parallel)         │
                             │                                         │
@@ -93,7 +93,7 @@ Input ──► [VOL IN] ──► [Soft Clip] ──►│  [Dust Exciter] ─�
              [Triangle LFO] ──────────► modulates all band frequencies
 <hr>
 
-##Building From Source
+**Building From Source**
 See BUILD.md for complete build instructions.
 Requirements:
 
@@ -109,7 +109,7 @@ cmake --build . --config Release
 The built .vst3 will be in build\PS3100Resonator_artefacts\Release\VST3\ and is also auto-copied to your system VST3 folder.
 <hr>
 
-###License
+**License**
 DSP code is provided as-is for personal/educational use.
 JUCE has its own licensing terms — see https://juce.com/legal/
 <hr>
