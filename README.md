@@ -4,6 +4,7 @@
   <img src="logo.png">
 </p>
 <br>
+
 **A three-band parallel resonator VST3 plugin modeled after the Korg PS3100
 resonator circuit, with design influences from the Polymoog resonator,
 Tiptop Audio Resonator, and Nonlinear Circuits Resonate.**
